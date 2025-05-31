@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SafeBankingLinkGuard</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 15px; max-width: 300px; }
+    h3 { text-align: center; }
+    #status { margin-top: 10px; text-align: center; font-weight: bold; }
+    #urlInput { width: 100%; padding: 6px; margin-top: 10px; box-sizing: border-box; }
+    #checkBtn { width: 100%; margin-top: 6px; padding: 8px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 4px; }
+    #checkBtn:disabled { background-color: #aaa; cursor: not-allowed; }
+    #result { margin-top: 12px; font-weight: bold; text-align: center; }
+    #result.safe { color: green; }
+    #result.danger { color: red; }
+    #result.error { color: orange; }
+    a#infoLink {
+      display: block;
+      margin-top: 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    a#infoLink:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h3>SafeBankingLinkGuard</h3>
+  <p>Extension is active and monitoring netbanking links.</p>
+
+  <input id="urlInput" type="url" placeholder="Enter URL (with https://)" />
+  <button id="checkBtn">Check URL Safety</button>
+  <div id="result"></div>
+
+  <!-- Link to the second HTML file -->
+  <a href="info.html" target="_blank" id="infoLink">More Info / Help</a>
+
+  <script src="popup.js"></script>
+</body>
+</html>

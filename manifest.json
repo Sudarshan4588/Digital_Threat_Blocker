@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "SafeBankingLinkGuard",
+  "version": "1.1",
+  "description": "Blocks suspicious netbanking links using Google Safe Browsing API.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.png"
+  },
+  "icons": {
+    "48": "icons/icon.png"
+  }
+}
