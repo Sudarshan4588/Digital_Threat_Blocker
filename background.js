@@ -1,4 +1,4 @@
-const apiKey = "AIzaSyDKUHhrkYgZ3s0UExH1GkyhCila2x6bhLQ"; // Put your Google Safe Browsing API key here
+const apiKey = ""; // Put your Google Safe Browsing API key here
 
 // List of trusted netbanking domains - whitelist
 const trustedBankDomains = [
