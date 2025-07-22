@@ -1,4 +1,4 @@
-const apiKey = "AIzaSyCdq8aZVqTf6g7Nz4_xAfNDBbY5_oDTXWI"; // Replace with your actual Google API key
+const apiKey = "AIzaSyDKUHhrkYgZ3s0UExH1GkyhCila2x6bhLQ"; // Replace with your actual Google API key
 const checkBtn = document.getElementById("checkBtn");
 const urlInput = document.getElementById("urlInput");
 const resultDiv = document.getElementById("result");
